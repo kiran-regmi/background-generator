@@ -25,10 +25,10 @@ h3 {
 	letter-spacing: .1em;
 }
 h5 {
-	font: 20 .5em 'Athelas', sans-serif;
+	font: 30 .5em 'Athelas', sans-serif;
 	color: rgba(0,0,0,.5);
 	text-align: center;
 	/* text-transform: uppercase; */
 	letter-spacing: .5em;
-	width: 80%;
+	width: 100%;
 }
