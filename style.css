@@ -1,12 +1,32 @@
-/* this is comment */
+/* this is main css file */
 body {
-	font: 'Raleway', sans-serif;
+	font: Arial, 'Raleway', Helvetica, sans-serif;
 	color: rgba(0,0,0,.5);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .5em;
 	top: 15%;
 	background: linear-gradient(to right, red, yellow);
+}
+ul {
+	list-style-type: none;
+	margin:  0;
+	padding:  0;
+	overflow: hidden;
+}
+li {
+	float: right;
+}
+li a {
+	display: block;
+	color:  white;
+	text-align: center;
+	padding:  14px 16px;
+	text-decoration: none;
+	text-transform: lowercase;	
+}
+li a:hover {
+	background-color: #111;
 }
 
 h1 {
@@ -17,29 +37,123 @@ h1 {
 	letter-spacing: .5em;
 	width: 100%;
 }
+.backtogit {
+	background-color: white;
+	/*rgba(8,0,0,.5);*/
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	width:  20%;
+	color:  white;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	left: 40%;
+	right: 40%;
+	border:  1px solid #73AD21;
 
-h3 {
-	font: 900 1em 'Raleway', sans-serif;
-	color: rgba(0,0,0,.5);
+}
+.backtogit:hover {
+	background-color: #111;
+	text-decoration: none;
+}
+
+a:link {
+	color:  red;
+	text-decoration: none;
+}
+a:visited {
+
+}
+.footer {
+	font:  350 .9em 'Athelas';
+	position:  fixed;
+	left:  0;
+	bottom: 0;
+	width: 100%;
+	background-color: white; /*rgb(8,0,0,.5);*/
+	color: black;
 	text-align: center;
 	text-transform: none;
-	letter-spacing: .1em;
 }
-h5 {
-	font: 50 .5em 'Athelas', sans-serif;
-	color: #14171C; /*rgba(0,0,0,.5);*/
-	text-align: center;
-	text-decoration: none; 
-	/* text-transform: uppercase; */
-	letter-spacing: .5em;
-	width: 100%;
+.fa {
+  padding: 20px; 
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px; 
+  border-radius: 50%;
+  color: black;
 }
-h6 {
-	font: 30 .5em 'Athelas', sans-serif;
-	color: #14171C; /*rgba(0,0,0,.5);*/
-	text-align: center;
-	text-decoration: none; 
-	/* text-transform: uppercase; */
-	letter-spacing: .5em;
-	width: 100%;
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color:  white;
+}
+
+/* CSS for the form */ 
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  /*background-color: /*#f2f2f2;*/
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.map {
+	margin: auto;
+	width: 600px;
+	height: 400px;
 }
